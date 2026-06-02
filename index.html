@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duong Tuan Dung — Electrical Engineering & Machine Learning Portfolio</title>
+    <meta name="description" content="Academic and extracurricular portfolio of Duong Tuan Dung, an 11th-grade Mathematics student at Hanoi-Amsterdam High School for the Gifted, with a focus on IoT, software engineering, and machine learning.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Portfolio evidence patch: cleaner modal + embedded PDF without visible file names/links. */
+        .activity-impact-note {
+            margin-bottom: 28px;
+            padding: 24px;
+        }
+        .activity-impact-note h3 {
+            margin: 10px 0 10px;
+        }
+        .activities-grid {
+            align-items: stretch;
+        }
+        .event-modal-gallery-title {
+            display: none !important;
+        }
+        .event-modal-grid.clean-evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 22px;
+            margin-top: 22px;
+        }
+        .evidence-preview-card {
+            background: rgba(255,255,255,0.045);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 18px;
+            overflow: hidden;
+            min-height: 560px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.22);
+        }
+        .evidence-pdf-frame,
+        .evidence-video-frame,
+        .evidence-image-frame {
+            width: 100%;
+            height: 560px;
+            border: 0;
+            display: block;
+            background: #101522;
+        }
+        .evidence-video-frame {
+            object-fit: contain;
+        }
+        .evidence-image-frame {
+            object-fit: contain;
+        }
+        .event-modal-desc ul {
+            margin: 12px 0 0 20px;
+            padding: 0;
+        }
+        .event-modal-desc li {
+            margin: 6px 0;
+        }
+        @media (max-width: 760px) {
+            .event-modal-grid.clean-evidence-grid {
+                grid-template-columns: 1fr;
+            }
+            .evidence-preview-card,
+            .evidence-pdf-frame,
+            .evidence-video-frame,
+            .evidence-image-frame {
+                min-height: 430px;
+                height: 430px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <a href="#about" class="logo">DTD.</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#iot-panel">Project</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#activities">Activities</a></li>
+        </ul>
+        <a href="mailto:duongtuandung123123@gmail.com" class="nav-contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h3><i class="fas fa-satellite-dish"></i> Software &amp; IoT Developer</h3>
+                    <h1>Duong Tuan <span>Dung</span></h1>
+                    <p>
+                        Grade 11, Mathematics Class 2 — <span class="highlight">Hanoi-Amsterdam High School for the Gifted</span>. Focused on Electrical Engineering, Computer Science, Machine Learning, ESP32 embedded systems, and applied AI projects.
+                    </p>
+                    <p class="hero-summary">
+                        Second Prize winner in the city-level Mathematics competition. Experienced in ESP32 embedded programming, data processing, and machine learning. Developed an AI-based landslide early warning system and earned a Gold Medal recognition in 2026.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#awards" class="btn btn-primary">View Portfolio</a>
+                        <a href="#iot-panel" class="btn btn-outline">Explore Project</a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="profile-orb">DT</div>
+                    <h4>Duong Tuan Dung</h4>
+                    <span class="tag">Future EE / CS / ML Engineer</span>
+                    <div class="info">
+                        <div class="info-item"><span>Date of Birth</span><span>October 11, 2009</span></div>
+                        <div class="info-item"><span>Target</span><span>Singapore / Australia</span></div>
+                        <div class="info-item"><span>Focus</span><span>EE / CS / ML</span></div>
+                        <div class="info-item"><span>Email</span><span>duongtuandung123123@gmail.com</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="academics">
+            <div class="section-title">
+                <h2>Academic Profile</h2>
+                <p>Mathematics, engineering, and international preparation metrics</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-value">9.4</div>
+                    <div class="stat-label">GPA — Grade 10 &amp; 11 Term 1</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">1540</div>
+                    <div class="stat-label">SAT Score</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">7.0</div>
+                    <div class="stat-label">IELTS Band</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value">A-Level</div>
+                    <div class="stat-label">Mathematics / Computer Science</div>
+                </div>
+            </div>
+
+            <div class="grid three-card-grid">
+                <article class="card mini-profile-card">
+                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <div class="activity-content">
+                        <div class="badge">Academics</div>
+                        <h3>Strong Quantitative Foundation</h3>
+                        <p>Consistent academic performance in mathematics, science, and computer science with a clear focus on engineering and applied machine learning.</p>
+                    </div>
+                </article>
+                <article class="card mini-profile-card">
+                    <div class="icon-box"><i class="fas fa-microchip"></i></div>
+                    <div class="activity-content">
+                        <div class="badge">Engineering</div>
+                        <h3>Embedded &amp; IoT Development</h3>
+                        <p>Hands-on experience with ESP32 programming, sensor data processing, relay logic, and smart automation dashboards.</p>
+                    </div>
+                </article>
+                <article class="card mini-profile-card">
+                    <div class="icon-box"><i class="fas fa-brain"></i></div>
+                    <div class="activity-content">
+                        <div class="badge">AI Focus</div>
+                        <h3>Machine Learning Applications</h3>
+                        <p>Project-oriented learning in AI systems, data-driven analysis, and early warning models for real-world environmental challenges.</p>
+                    </div>
+                </article>
+                <article class="card mini-profile-card" onclick="openEventModal('dung_scores')" style="cursor:pointer;">
+                    <div class="icon-box"><i class="fas fa-file-alt"></i></div>
+                    <div class="activity-content">
+                        <div class="badge">Records</div>
+                        <h3>IELTS, SAT &amp; Academic Files</h3>
+                        <p>Click to open the IELTS/SAT/AP folder, SAT digital score file, and academic transcript folder using the corrected relative paths.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="iot-panel">
+            <div class="section-title">
+                <h2>Smart IoT Plant Pot Dashboard</h2>
+                <p>Interactive ESP32-style sensor simulation and relay actuation logic</p>
+            </div>
+
+            <div class="project-shell card">
+                <div class="project-header">
+                    <div>
+                        <div class="badge">Personal Project</div>
+                        <h3>Smart IoT Plant Pot System</h3>
+                        <p>
+                            This dashboard simulates a real-time ESP32 sensor feed. Drag the <b>Soil Moisture</b> slider to see the relay and water pump logic change dynamically.
+                        </p>
+                    </div>
+                    <div class="project-chip"><i class="fas fa-wifi"></i> Live Telemetry</div>
+                </div>
+
+                <div class="iot-grid">
+                    <div class="sensors-controls">
+                        <div class="sensor-control">
+                            <label>Soil Moisture: <span id="val-moisture">45%</span></label>
+                            <input type="range" id="slider-moisture" min="10" max="90" value="45" oninput="updateSensorValues()">
+                        </div>
+                        <div class="sensor-control">
+                            <label>Ambient Temperature: <span id="val-temp">28°C</span></label>
+                            <input type="range" id="slider-temp" min="15" max="45" value="28" oninput="updateSensorValues()">
+                        </div>
+                    </div>
+
+                    <div class="status-panel">
+                        <div class="relay-bulb" id="relay-status">OFF</div>
+                        <div class="status-text" id="status-text">Relay: OFF — Soil moisture is within the ideal range.</div>
+                    </div>
+
+                    <div class="esp-logs">
+                        <h4><i class="fas fa-terminal"></i> ESP32 Serial Telemetry Stream:</h4>
+                        <div class="console-box" id="serial-logs">
+                            [ESP32] System initialization completed.<br>
+                            [ESP32] WiFi status: Connected.<br>
+                            [ESP32] Soil Moisture sensor connected on GPIO34.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards">
+            <div class="section-title">
+                <h2>Awards &amp; Recognition</h2>
+                <p>Academic competitions, technical documentation, and project evidence</p>
+            </div>
+
+            <div class="grid awards-grid">
+                <article class="card award-event-card gold" onclick="openEventModal('dung_icpc')">
+                    <div class="activity-content">
+                        <div class="badge warm-badge"><i class="fas fa-trophy"></i> 2026 — International</div>
+                        <h3>ICPC 2026 Evidence</h3>
+                        <p>Machine learning algorithms for early-stage landslide warning and telemetry mapping. Click to view details and verification assets.</p>
+                        <button class="open-gallery-btn">View Details</button>
+                    </div>
+                </article>
+
+                <article class="card award-event-card" onclick="openEventModal('dung_math')">
+                    <div class="activity-content">
+                        <div class="badge"><i class="fas fa-award"></i> Academic Merit</div>
+                        <h3>Second Prize — City Mathematics & Academic Awards</h3>
+                        <p>Official recognition for strong performance in a city-level mathematics competition with advanced analytical problem solving.</p>
+                        <button class="open-gallery-btn">View Details</button>
+                    </div>
+                </article>
+
+                <article class="card award-event-card cyan" onclick="openEventModal('dung_iot')">
+                    <div class="activity-content">
+                        <div class="badge cyan-badge"><i class="fas fa-folder-open"></i> Technical Project</div>
+                        <h3>Smart IoT System Architecture</h3>
+                        <p>Interactive automation report, project demo, operating logic, and technical design documentation archive.</p>
+                        <button class="open-gallery-btn">View Details</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="quick-access card">
+                <div class="quick-access-title">
+                    <h3><i class="fas fa-paperclip"></i> Quick Access Certificates</h3>
+                    <p>Open the linked credential package directly from each card.</p>
+                </div>
+                <div class="certificate-grid">
+                    <div class="gallery-card" onclick="openEventModal('dung_icpc')">
+                        <div class="card-img-wrapper"><i class="far fa-folder-open"></i></div>
+                        <div class="card-info">
+                            <h4>ICPC 2026 Evidence Folder</h4>
+                            <span class="view-btn"><i class="fas fa-external-link-alt"></i> View Credentials</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openEventModal('dung_math')">
+                        <div class="card-img-wrapper"><i class="far fa-file-pdf"></i></div>
+                        <div class="card-info">
+                            <h4>City Mathematics Award Evidence</h4>
+                            <span class="view-btn"><i class="fas fa-external-link-alt"></i> View Math Awards</span>
+                        </div>
+                    </div>
+                    <div class="gallery-card" onclick="openEventModal('dung_scores')">
+                        <div class="card-img-wrapper"><i class="far fa-file-pdf"></i></div>
+                        <div class="card-info">
+                            <h4>IELTS / SAT / Academic Records</h4>
+                            <span class="view-btn"><i class="fas fa-external-link-alt"></i> View Records</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities">
+            <div class="section-title">
+                <h2>Extracurricular Initiatives</h2>
+                <p>Community service, STEM leadership, research, automation, and applied engineering practice</p>
+            </div>
+
+            <div class="activity-impact-note card">
+                <div>
+                    <div class="badge warm-badge"><i class="fas fa-star"></i> Key Highlights</div>
+                    <h3>Leadership, Community Impact &amp; Technical Growth</h3>
+                    <p>
+                        This section focuses on verified extracurricular evidence: volunteer certificates, social activity records,
+                        STEM/club participation, and personal technical project files. The content is organized to emphasize role,
+                        contribution, evidence, and relevance to engineering, computer science, and community engagement.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid activities-grid">
+                <article class="card activity-feature" onclick="openEventModal('dung_iot')">
+                    <div class="activity-main-image placeholder-visual">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="activity-content">
+                        <div class="badge">Research &amp; Automation</div>
+                        <h3>Smart IoT Plant Pot Project</h3>
+                        <p>Report, poster, demo video, and classroom work images are grouped as technical evidence for the personal IoT product.</p>
+                        <button class="open-gallery-btn">Inspect Evidence</button>
+                    </div>
+                </article>
+
+                <article class="card activity-feature" onclick="openEventModal('dung_volunteer')">
+                    <div class="activity-main-image placeholder-visual">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="activity-content">
+                        <div class="badge warm-badge">Volunteer Activity</div>
+                        <h3>Community Service &amp; Volunteer Contribution</h3>
+                        <p>Volunteer evidence from the non-academic folder, including the certificate for the 27/7/2025 gratitude candle-lighting program.</p>
+                        <button class="open-gallery-btn">Open Evidence</button>
+                    </div>
+                </article>
+
+                <article class="card activity-feature" onclick="openEventModal('dung_stem_leadership')">
+                    <div class="activity-main-image placeholder-visual">
+                        <i class="fas fa-users-gear"></i>
+                    </div>
+                    <div class="activity-content">
+                        <div class="badge cyan-badge">Leadership &amp; STEM</div>
+                        <h3>STEM / Club / Social Activity Records</h3>
+                        <p>Important non-academic records such as STEM leadership, club participation, and social activity documentation are grouped here.</p>
+                        <button class="open-gallery-btn">View Records</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact card">
+                <h2>Connect With Me</h2>
+                <p>Open to academic inquiries, technical collaboration, and engineering opportunities.</p>
+                <a href="mailto:duongtuandung123123@gmail.com" class="btn btn-primary">duongtuandung123123@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="">
+        <div id="caption"></div>
+    </div>
+
+    <div id="event-details-modal" class="event-modal">
+        <div class="event-modal-content">
+            <span class="close-event-modal" onclick="closeEventModal()">&times;</span>
+            <div class="event-modal-inner">
+                <div class="event-modal-header-container">
+                    <span id="event-modal-cat" class="event-modal-badge-cat">Category</span>
+                    <span id="event-modal-date" class="event-modal-badge-date">2026</span>
+                </div>
+                <h2 id="event-modal-title" class="event-modal-title">Event Title</h2>
+                <div id="event-modal-desc" class="event-modal-desc">Detailed event description goes here...</div>
+                <div class="event-modal-gallery-section">
+                    <h3 class="event-modal-gallery-title"><i class="fas fa-images"></i> Verification Portfolio</h3>
+                    <div id="event-modal-gallery" class="event-modal-grid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#about" class="logo footer-logo">DTD.</a>
+            <div class="footer-copyright">&copy; 2026 Duong Tuan Dung. Built with passion and technology.</div>
+            <div class="footer-links">
+                <a href="mailto:duongtuandung123123@gmail.com">Email</a>
+                <a href="#about">About</a>
+                <a href="#iot-panel">Project</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        /* Evidence modal override: embeds PDFs/videos/images directly and intentionally does not render
+           file names, captions, or "Open in new tab" links under the previews. */
+        (function () {
+            const BASE_EXTRA = "../2. Hoạt động ngoại khóa (sản phẩm cá nhân, cuộc thi, nghiên cứu khoa học, thiện nguyện, v.v)";
+            const BASE_IOT = `${BASE_EXTRA}/a. Sản phẩm cá nhân_ Chậu cây IOT`;
+            const BASE_ACAD = `${BASE_EXTRA}/c. Giải thưởng thành tích (Academic)`;
+            const BASE_NON = `${BASE_EXTRA}/d. Hoạt động khác (Non-academic_CLB, thiện nguyện, hoạt động xã hội, ...)`;
+            const BASE_RECORDS = "../3. Tình trạng hồ sơ học thuật (bảng điểm, thư giới thiệu, chứng chỉ, essay, v.v)";
+
+            const events = {
+                dung_scores: {
+                    category: "Academic Records",
+                    date: "2025–2026",
+                    title: "IELTS, SAT & Academic Records",
+                    description: `
+                        <p>This package presents academic records and standardized-test evidence in a cleaner verification view.</p>
+                        <ul>
+                            <li>IELTS evidence is displayed directly in the modal without showing the file name underneath.</li>
+                            <li>SAT digital score evidence is linked from the academic achievement folder.</li>
+                            <li>The modal keeps the viewer clean by removing duplicate labels and external-open text.</li>
+                        </ul>
+                    `,
+                    evidence: [
+                        { type: "pdf", src: "ielts.pdf" },
+                        { type: "pdf", src: `${BASE_ACAD}/digital_sat_k12_student_weekend_148062945_2f691590-a38c-47dd-a270-f59ed54d5a43.pdf` }
+                    ]
+                },
+                dung_icpc: {
+                    category: "International / Competition",
+                    date: "2026",
+                    title: "ICPC 2026 Evidence",
+                    description: `
+                        <p>Evidence package for the ICPC 2026 record stored in the academic achievement folder.</p>
+                        <ul>
+                            <li>Presented as an embedded verification file instead of a visible file-name list.</li>
+                            <li>Supports review of the certificate or scanned evidence directly in the portfolio modal.</li>
+                        </ul>
+                    `,
+                    evidence: [
+                        { type: "pdf", src: `${BASE_ACAD}/ICPC 2026/ICPC 2026.pdf` }
+                    ]
+                },
+                dung_math: {
+                    category: "Academic Achievement",
+                    date: "2025–2026",
+                    title: "Mathematics & Academic Recognition",
+                    description: `
+                        <p>Academic awards and school achievement evidence grouped for quick verification.</p>
+                        <ul>
+                            <li>City-level mathematics award evidence.</li>
+                            <li>Academic excellence and merit records.</li>
+                            <li>District/city mathematics recognition documents.</li>
+                        </ul>
+                    `,
+                    evidence: [
+                        { type: "pdf", src: `${BASE_ACAD}/HS giỏi cấp thành phố.pdf` },
+                        { type: "pdf", src: `${BASE_ACAD}/HS xuất sắc.pdf` },
+                        { type: "pdf", src: `${BASE_ACAD}/Nhì toán cấp quận.pdf` },
+                        { type: "pdf", src: `${BASE_ACAD}/Nhi toán Quận & Thành phố.pdf` }
+                    ]
+                },
+                dung_iot: {
+                    category: "Personal Project / IoT",
+                    date: "2026",
+                    title: "Smart IoT Plant Pot Project Evidence",
+                    description: `
+                        <p>Technical product evidence for the smart IoT plant pot project.</p>
+                        <ul>
+                            <li>Includes project report, poster/demo references, video evidence, and classroom work images.</li>
+                            <li>Highlights ESP32-style sensing, automation logic, dashboard interaction, and applied engineering practice.</li>
+                            <li>Project evidence is connected to the original personal-project folder shown in the local directory.</li>
+                        </ul>
+                    `,
+                    evidence: [
+                        { type: "pdf", src: `${BASE_IOT}/BAO_CAO_CHAU_CAY_THONG_MINH.pdf` },
+                        { type: "video", src: `${BASE_IOT}/SPCN Tuấn Dũng.mp4` }
+                    ]
+                },
+                dung_nonacademic: {
+                    category: "Non-academic Activities",
+                    date: "2025–2026",
+                    title: "Volunteer, Club & Social Activity Evidence",
+                    description: `
+                        <p>Non-academic records covering volunteer certificates, club participation, social activities, and STEM-related roles.</p>
+                        <ul>
+                            <li>Used for documenting initiative, service mindset, leadership, and contribution beyond academics.</li>
+                            <li>Evidence is displayed directly as PDF previews with no duplicate file names or open-link labels below.</li>
+                        </ul>
+                    `,
+                    evidence: [
+                        { type: "pdf", src: `${BASE_NON}/1.pdf` },
+                        { type: "pdf", src: `${BASE_NON}/2.pdf` },
+                        { type: "pdf", src: `${BASE_NON}/3.pdf` },
+                        { type: "pdf", src: `${BASE_NON}/4.pdf` }
+                    ]
+                },
+                dung_volunteer: {
+                    category: "Volunteer Activity",
+                    date: "27/07/2025",
+                    title: "Community Service & Volunteer Contribution",
+                    description: `
+                        <p>Volunteer evidence from the non-academic activity folder.</p>
+                        <ul>
+                            <li>Includes the certificate for the 27/7/2025 gratitude candle-lighting volunteer program.</li>
+                            <li>Highlights contribution as a student volunteer and community engagement record.</li>
+                            <li>Suitable for the extracurricular and service section of the portfolio.</li>
+                        </ul>
+                    `,
+                    evidence: [
+                        { type: "pdf", src: `${BASE_NON}/3.pdf` }
+                    ]
+                },
+                dung_stem_leadership: {
+                    category: "Leadership / STEM / Social Activity",
+                    date: "2025–2026",
+                    title: "STEM, Club & Social Activity Records",
+                    description: `
+                        <p>Important non-academic evidence grouped separately from academic awards.</p>
+                        <ul>
+                            <li>Shows activities such as STEM participation, leadership, club work, and community/social records.</li>
+                            <li>Designed to keep the portfolio focused on role, impact, and evidence rather than raw file names.</li>
+                        </ul>
+                    `,
+                    evidence: [
+                        { type: "pdf", src: `${BASE_NON}/1.pdf` },
+                        { type: "pdf", src: `${BASE_NON}/2.pdf` },
+                        { type: "pdf", src: `${BASE_NON}/4.pdf` }
+                    ]
+                },
+                // Backward compatibility if an older card still calls this key.
+                dung_chess: null
+            };
+            events.dung_chess = events.dung_nonacademic;
+
+            function setText(id, value) {
+                const el = document.getElementById(id);
+                if (el) el.textContent = value || "";
+            }
+
+            function setHtml(id, value) {
+                const el = document.getElementById(id);
+                if (el) el.innerHTML = value || "";
+            }
+
+            function createEvidenceElement(item) {
+                const wrapper = document.createElement("div");
+                wrapper.className = "evidence-preview-card";
+
+                if (item.type === "video") {
+                    const video = document.createElement("video");
+                    video.className = "evidence-video-frame";
+                    video.controls = true;
+                    video.src = item.src;
+                    wrapper.appendChild(video);
+                    return wrapper;
+                }
+
+                if (item.type === "image") {
+                    const img = document.createElement("img");
+                    img.className = "evidence-image-frame";
+                    img.src = item.src;
+                    img.alt = "Evidence preview";
+                    wrapper.appendChild(img);
+                    return wrapper;
+                }
+
+                const iframe = document.createElement("iframe");
+                iframe.className = "evidence-pdf-frame";
+                iframe.loading = "lazy";
+                iframe.setAttribute("title", "Embedded verification document");
+                iframe.src = `${item.src}#toolbar=0&navpanes=0&scrollbar=1&view=FitH`;
+                wrapper.appendChild(iframe);
+                return wrapper;
+            }
+
+            window.openEventModal = function (eventKey) {
+                const data = events[eventKey] || events.dung_nonacademic;
+                const modal = document.getElementById("event-details-modal");
+                const gallery = document.getElementById("event-modal-gallery");
+                const galleryTitle = document.querySelector(".event-modal-gallery-title");
+
+                setText("event-modal-cat", data.category);
+                setText("event-modal-date", data.date);
+                setText("event-modal-title", data.title);
+                setHtml("event-modal-desc", data.description);
+
+                if (galleryTitle) galleryTitle.style.display = "none";
+                if (gallery) {
+                    gallery.innerHTML = "";
+                    gallery.className = "event-modal-grid clean-evidence-grid";
+                    (data.evidence || []).forEach(item => gallery.appendChild(createEvidenceElement(item)));
+                }
+
+                if (modal) {
+                    modal.style.display = "flex";
+                    document.body.style.overflow = "hidden";
+                }
+            };
+
+            window.closeEventModal = function () {
+                const modal = document.getElementById("event-details-modal");
+                if (modal) modal.style.display = "none";
+                document.body.style.overflow = "";
+            };
+
+            document.addEventListener("click", function (event) {
+                const modal = document.getElementById("event-details-modal");
+                if (modal && event.target === modal) window.closeEventModal();
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") window.closeEventModal();
+            });
+
+            window.updateSensorValues = window.updateSensorValues || function () {
+                const moisture = document.getElementById("slider-moisture")?.value || 45;
+                const temp = document.getElementById("slider-temp")?.value || 28;
+                const moistureText = document.getElementById("val-moisture");
+                const tempText = document.getElementById("val-temp");
+                const relay = document.getElementById("relay-status");
+                const status = document.getElementById("status-text");
+                const logs = document.getElementById("serial-logs");
+
+                if (moistureText) moistureText.textContent = `${moisture}%`;
+                if (tempText) tempText.textContent = `${temp}°C`;
+
+                const isDry = Number(moisture) < 35;
+                if (relay) relay.textContent = isDry ? "ON" : "OFF";
+                if (status) status.textContent = isDry
+                    ? "Relay: ON — Soil is dry, water pump is activated."
+                    : "Relay: OFF — Soil moisture is within the ideal range.";
+                if (logs) {
+                    logs.innerHTML = `[ESP32] Moisture: ${moisture}%<br>[ESP32] Temperature: ${temp}°C<br>[ESP32] Relay: ${isDry ? "ON" : "OFF"}`;
+                }
+            };
+        })();
+    </script>
+</body>
+</html>
