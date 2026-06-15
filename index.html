@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dương Tuấn Dũng — IoT & Academic Portfolio</title>
+  <meta name="description" content="Portfolio of Dương Tuấn Dũng: IoT personal project, academic awards, and extracurricular activities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scrollbar" id="scrollbar"></div>
+  <header class="site-header">
+    <a class="brand" href="#home"><span>DT</span><strong>Dương Tuấn Dũng</strong></a>
+    <nav class="top-nav">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#awards">Awards</a>
+      <a href="#project">Project</a>
+      <a href="#skills">Skills</a>
+      <a href="#activities">Activities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hanoi-Amsterdam High School for the Gifted</p>
+          <h1>Dương Tuấn<br><span>Dũng</span></h1>
+          <p class="hero-lead">IoT Builder · Mathematics Student · Engineering Portfolio</p>
+          <p class="hero-desc">I turn ideas into working prototypes: sensors, firmware, data monitoring, reports, presentation media, and real evidence from class activities.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#project"><i class="fa-solid fa-seedling"></i> View project</a>
+            <a class="btn ghost" href="project.html"><i class="fa-solid fa-up-right-from-square"></i> Project deep-dive</a>
+          </div>
+        </div>
+        <aside class="profile-card reveal">
+          <div class="profile-avatar">DT</div>
+          <h2>Dương Tuấn Dũng</h2>
+          <p>Grade 11 · Mathematics</p>
+          <div class="stats-grid">
+            <div><strong>9.4</strong><span>GPA</span></div>
+            <div><strong>1540</strong><span>SAT</span></div>
+            <div><strong>7.0</strong><span>IELTS</span></div>
+            <div><strong>IoT</strong><span>Builder</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section philosophy" id="philosophy">
+      <div class="container two-col">
+        <div class="section-kicker">Why Engineering?</div>
+        <div>
+          <h2>My work starts with a clear problem, then becomes a working system.</h2>
+          <p>I approach engineering as a practical creative process. A strong portfolio item should not stop at an idea; it needs hardware, software, testing, documentation, and visual evidence that makes the project easy to understand.</p>
+          <p>The Smart IoT Plant Pot project shows this workflow clearly: sensor input → ESP32 processing → relay control → watering action → report, poster, video, and class images.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="awards">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Recognition</p>
+          <h2>Academic awards & certificates gallery</h2>
+          <p>Each card opens 1–5 evidence files where possible: images, PDFs, and related documents.</p>
+        </div>
+        <div class="award-list" id="awardList"></div>
+      </div>
+    </section>
+
+    <section class="section project-section" id="project">
+      <div class="container project-grid">
+        <div class="project-copy reveal">
+          <p class="section-kicker">Personal Project · 2025</p>
+          <h2>Smart IoT Plant Pot</h2>
+          <p class="big-text">An ESP32-based automated plant watering system that reads soil moisture and temperature, controls a relay pump, and presents the work through a report, poster, demo video link, and classroom photos.</p>
+          <div class="chip-row">
+            <span>ESP32</span><span>Soil Sensor</span><span>DHT11</span><span>Relay Pump</span><span>Serial Log</span><span>Documentation</span>
+          </div>
+          <div class="hero-actions compact">
+            <button class="btn primary" onclick="openEvidence('iot')"><i class="fa-solid fa-folder-open"></i> Open evidence</button>
+            <a class="btn ghost" href="project.html"><i class="fa-solid fa-diagram-project"></i> View case study</a>
+          </div>
+        </div>
+        <div class="sim-card reveal">
+          <div class="sim-top"><span class="dot"></span> live_plant_sim</div>
+          <label>Soil moisture <b id="moistureValue">45%</b></label>
+          <input id="moistureRange" type="range" min="10" max="90" value="45" oninput="updateSensors()">
+          <label>Temperature <b id="tempValue">28°C</b></label>
+          <input id="tempRange" type="range" min="15" max="45" value="28" oninput="updateSensors()">
+          <div class="quality" id="pumpStatus">PUMP OFF</div>
+          <p id="pumpDesc">Soil moisture is within a safe range.</p>
+          <pre id="consoleLog">[SYSTEM] ESP32 plant node initialized...</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Competencies</p>
+          <h2>Technical stack & working style</h2>
+        </div>
+        <div class="skill-grid">
+          <article><i class="fa-solid fa-microchip"></i><h3>Embedded Systems</h3><p>ESP32 firmware, GPIO, ADC sensor reading, relay control, serial debugging, and product demo preparation.</p></article>
+          <article><i class="fa-solid fa-cloud-arrow-up"></i><h3>IoT Workflow</h3><p>Sensor data acquisition, control threshold, live monitoring logic, and explanation through dashboards or logs.</p></article>
+          <article><i class="fa-solid fa-file-lines"></i><h3>Technical Documentation</h3><p>Reports, posters, presentation files, project descriptions, and organized evidence for portfolio review.</p></article>
+          <article><i class="fa-solid fa-people-group"></i><h3>Leadership & Service</h3><p>STEM outreach, charity participation, activity certificates, and contribution to school/community work.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activities" id="activities">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Activities</p>
+          <h2>Extracurricular activities with evidence</h2>
+          <p>Activities are written as portfolio blocks: role, organization, time, responsibility, impact, and attached proof.</p>
+        </div>
+        <div class="filters" id="filters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="stem">STEM / Clubs</button>
+          <button data-filter="volunteering">Volunteering</button>
+          <button data-filter="sports">Sports</button>
+        </div>
+        <div class="activity-list" id="activityList"></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-card">
+        <p class="section-kicker">Get in touch</p>
+        <h2>Open to engineering, IoT, and academic opportunities.</h2>
+        <p>Feel free to reach out for collaboration, technical discussion, or portfolio review.</p>
+        <div class="contact-row">
+          <span><i class="fa-solid fa-envelope"></i> duongtuandung123123@gmail.com</span>
+          <span><i class="fa-solid fa-school"></i> Hanoi-Amsterdam HS</span>
+          <span><i class="fa-solid fa-location-dot"></i> Hanoi, Vietnam</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer> Dương Tuấn Dũng · IoT & Academic Portfolio · 2026</footer>
+
+  <div class="modal" id="evidenceModal" aria-hidden="true" onclick="handleBackdrop(event)">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeEvidence()">×</button>
+      <div class="modal-info">
+        <p class="section-kicker" id="modalCategory">Category</p>
+        <h2 id="modalTitle">Title</h2>
+        <p class="modal-meta" id="modalMeta">Meta</p>
+        <div id="modalDesc"></div>
+      </div>
+      <div class="modal-media">
+        <button class="nav-btn prev" onclick="showMedia(currentIndex-1)">‹</button>
+        <div id="mediaStage"></div>
+        <button class="nav-btn next" onclick="showMedia(currentIndex+1)">›</button>
+      </div>
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()"><button>×</button><img id="lightboxImg" alt="Evidence image"></div>
+  <script src="script.js"></script>
+</body>
+</html>
